@@ -8,4 +8,56 @@ h1, h4 {
 }
 h1 {
   color:rgb(12, 131, 67);
+  line-height: bold;
 }
+
+@media (min-width:920px) {
+  .view-mobile {
+    display: none;
+  }
+  .view-desktop {
+    display: block;
+  }
+  img {
+    background-image: url('assets/images/logo.png');
+    height: 300px;
+    width: 280px;
+  }
+}
+/* inicio */
+#bg {
+  background-image: url('../assets/images/plato.jpg');
+  background-size: auto;
+}
+@media (min-width:920px) {
+  .view-mobile {
+    display: none;
+  }
+  .view-desktop {
+    display: block;
+  }
+  #bg {
+    background-image:url('../assets/images/anticucho.png');
+    background-size: cover;
+  }
+  h1 {
+    line-height: bold;
+    background-color: white
+  }
+}
+/*botones de inicio */
+.btn-group {
+ margin-top: 50rem;
+ margin-left: 5rem;
+ 
+}
+.btn {
+  color: white;
+  border: 2px solid rgb(37, 211, 118);
+  background-color: rgb(12, 131, 67);
+}
+
+ 
+  
+  
+
