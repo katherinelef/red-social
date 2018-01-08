@@ -1,9 +1,11 @@
-.bg {
-  background: rgb(43, 43, 43);
+/* splash */
+#img {
+  margin: 14rem 8rem;
 }
-#word {
-  color: rgb(160, 91, 31);
-  font-size: 28px;
+h1, h4 {
+  font-family: 'Bellefair', serif;
   text-align: center;
-  margin-top: 45vh;
+}
+h1 {
+  color:rgb(12, 131, 67);
 }
