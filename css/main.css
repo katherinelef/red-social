@@ -28,8 +28,9 @@ h1 {
 #bg {
   background-image: url('../assets/images/plato.jpg');
   background-size: auto;
+  background-repeat: no-repeat;
 }
-@media (min-width:920px) {
+@media (min-width:626px) {
   .view-mobile {
     display: none;
   }
@@ -56,7 +57,29 @@ h1 {
   border: 2px solid rgb(37, 211, 118);
   background-color: rgb(12, 131, 67);
 }
-
+@media (min-width:920px) {
+  .view-mobile {
+    display: none;
+  }
+  .view-desktop {
+    display: block;
+  }
+  .btn-group {
+    margin-top: 45rem;
+    margin-left: 48rem;
+    margin-right: -35rem;
+  }
+  .btn {
+    color: rgb(12, 131, 67);
+    border: 2px solid rgb(37, 211, 118);
+    background-color: rgb(240, 245, 242);
+    font-family: 'Bellefair', serif;
+    line-height: bold;
+  }
+  .btn:hover {
+    background-color: rgb(12, 131, 67);
+  }
+}
  
   
   
