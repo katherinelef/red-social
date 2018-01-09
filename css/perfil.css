@@ -39,3 +39,50 @@
   font-size: 15px;
   padding: 20px;
 }
+
+#box-image {
+  margin: 25px;
+}
+
+#myForm {
+  margin-bottom: 25px;
+}
+
+#text{
+  outline-color: rgb(12, 131, 67);
+  margin-left: 15px;
+}
+
+#button {
+  background-color: rgb(12, 131, 67);
+  color: white;
+}
+
+.foto1 {
+  border: 1px solid rgb(12, 131, 67);
+  height: 167px;
+  margin-left: 15px;
+  background-image: url("../assets/images/carrusel-1.jpg");
+}
+
+.foto2 {
+  border: 1px solid rgb(12, 131, 67);
+  height: 167px;
+  margin-left: 15px;
+  background-image: url("../assets/images/carrusel-3.jpg");
+}
+
+.datos {
+  border: 1px solid rgb(12, 131, 67);
+  height: 167px;
+  margin-left: 15px;
+}
+
+.img-perfil {
+  width: 10%;
+  height: 10%;
+}
+
+.rest {
+  margin: 25px;
+}
