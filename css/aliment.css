@@ -1,0 +1,42 @@
+* body  {
+  font-family:'Bellefair', serif;
+}
+
+.navbar {
+  background-color:white;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.nav {
+  margin-top: 30px;
+}
+
+.logo {
+  width: 15%;
+  height: 15%;
+  margin: 15px;
+  display: inline-block;
+}
+
+.slider {
+  width: 70%;
+  height: 300px;
+}
+
+.item {
+  height: 300px;
+}
+
+.item h1 {
+    background-color: rgb(12, 131, 67);
+}
+
+.list-group-item {
+  width: 20%;
+  background-color: rgb(12, 131, 67);
+  color: white;
+  font-size: 15px;
+  padding: 20px;
+}
+
