@@ -1,9 +1,11 @@
 /* splash */
+* body  {
+  font-family:'Bellefair', serif;
+}
 #img {
   margin: 14rem 8rem;
 }
 h1, h4 {
-  font-family: 'Bellefair', serif;
   text-align: center;
 }
 h1 {
@@ -73,7 +75,6 @@ h1 {
     color: rgb(12, 131, 67);
     border: 2px solid rgb(37, 211, 118);
     background-color: rgb(240, 245, 242);
-    font-family: 'Bellefair', serif;
     line-height: bold;
   }
   .btn:hover {
