@@ -1,0 +1,51 @@
+* body {
+  font-family:'Bellefair', serif;
+  color: rgb(12, 131, 67);
+}
+.view-desktop {
+  width: 100%;
+}
+.logo {
+  width: 15%;
+  height: 15%;
+  margin: 15px;
+  display: inline-block;
+}
+span {
+  color: rgb(12, 131, 67); 
+}
+h3 {
+  color: rgb(12, 131, 67); 
+  margin-left: 3rem;
+}
+.btn {
+  margin-left: 10rem;
+  margin-top: 2rem;
+  border: 1px solid rgb(12, 131, 67);
+  color: rgb(12, 131, 67);
+}
+
+@media (min-width:920px) {
+  .view-mobile {
+    display: none;
+  }
+  .view-desktop {
+    display: block;
+  }
+  .title  {
+    margin-top: 5rem;
+    margin-left: 21%;
+    display:inline-block;
+  }
+  .text-center {
+    font-size: 7rem;
+  }
+  h3 {
+     
+    margin-left: auto;
+  }
+  .btn {
+    margin-left: 16rem;
+    margin-top: 2rem;
+  }
+}

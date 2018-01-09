@@ -8,7 +8,12 @@ $(document).ready(function () {
     var $checkBox = $('#check');
     var $submit = $('#signup');
 
+    // validando nombre
+    
+
     // creando variables de verificación
+    var $verifyName = false;
+    var $verifyLastName = false;
     var $verifyEmail = false;
     var $verifyPassword = false;
     var $verifyCheck = false;
@@ -24,24 +29,28 @@ $(document).ready(function () {
       $submit.attr('disabled', true);
     }
 
+    //validando campo de solo caracteres
+
     $validName.on('input', function(event){
       $(this).val();
-      var patternName = /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
-      if(patternName.test($(this).val())) {
-        $verifyEmail = true;
+      var pattern = /^[a-zA-Z]*$/;
+      if(pattern.test($(this).val())) {
+        $verifyName = true;
         buttonActi();
       } else {
+        $verifyName = false;
         buttondesacti();
       }
     });
 
     $validLastName.on('input', function(event){
       $(this).val();
-      var patternLastName = /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
-      if(patternLastName.test($(this).val())) {
-        $verifyEmail = true;
+      var pattern = /^[a-zA-Z]*$/;
+      if(pattern.test($(this).val())) {
+        $verifyLastName = true;
         buttonActi();
       } else {
+        $verifyLastName = false;
         buttondesacti();
       }
     });
@@ -53,6 +62,7 @@ $(document).ready(function () {
         $verifyEmail = true;
         buttonActi();
       } else {
+        $verifyEmail = false;
         buttondesacti();
       }
     });
@@ -63,6 +73,7 @@ $(document).ready(function () {
         $verifyPassword = true;
         buttonActi();
       } else {
+        $verifyPassword = false;
         buttondesacti();
       }
     });
@@ -80,12 +91,23 @@ $(document).ready(function () {
         $verifyCheck = true;
         buttonActi();
       } else {
+        $verifyCheck = false;
         buttondesacti();
       }
     });
-    // direcionandoe al perfil
-    $("#signup").click(function () {
-      window.location.href = 'perfil.html';
-  });
+    // aplicando localStore
+    $submit.on('click', function(event) {
+      event.preventDefault();
+      localStorage.email =$validEmail.val();
+      localStorage.password =$validPassword.val();
+      window.location.href = '../views/login.html';
 
+    })
+    console.log(localStorage.prueba = 'hola1');
+    // direcionandoe al perfil
+  //   $("#signup").click(function () {
+  //     window.location.href = 'perfil.html';
+  // });
+
+  
 });
