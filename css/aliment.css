@@ -69,11 +69,47 @@ p {
     box-sizing: border-box;
   }
   
+}@media (min-width:920px) {
+  .view-mobile {
+    display: none;
+  }
+  .view-desktop {
+    display: block;
+  }
+  .card-grid {
+    height: 90vh;
+    width: 80%;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
 }
 /* estilos de eventos.html */
-img {
+.flip img {
   height: 40vh;
   width: 90%;
   margin-top:12px;
-  opacity: 0;
+}
+.flip-text {
+  position: absolute;
+  margin: -26rem auto;
+  color: rgb(241, 241, 241);
+  background: rgba(49, 47, 47, 0.6);
+  width: 82%;
+  padding: 41px;
+  text-align: center;
+  height: 40vh;
+}
+@media (min-width:720px) {
+  .view-mobile {
+    display: none;
+  }
+
+  .view-desktop {
+    display: block
+  } 
+  .flip-text {
+    margin: -27rem auto;
+    width: 84%;   
+  }
 }
