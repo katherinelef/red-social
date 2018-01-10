@@ -33,7 +33,7 @@
 }
 
 .list-group-item {
-  width: 20%;
+
   background-color: rgb(12, 131, 67);
   color: white;
   font-size: 15px;
@@ -45,21 +45,25 @@
 }
 
 #myForm {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 #text{
   outline-color: rgb(12, 131, 67);
   margin-left: 15px;
+  height: 100px;
 }
 
 #button {
   background-color: rgb(12, 131, 67);
   color: white;
+  margin-left:15px;
+  margin-top: 5px;
 }
 
 .foto1 {
   border: 1px solid rgb(12, 131, 67);
+
   height: 167px;
   margin-left: 15px;
   background-image: url("../assets/images/carrusel-1.jpg");
@@ -67,13 +71,14 @@
 
 .foto2 {
   border: 1px solid rgb(12, 131, 67);
+  border-radius: 50%;
   height: 167px;
   margin-left: 15px;
   background-image: url("../assets/images/carrusel-3.jpg");
 }
 
 .datos {
-  border: 1px solid rgb(12, 131, 67);
+
   height: 167px;
   margin-left: 15px;
 }
@@ -85,4 +90,8 @@
 
 .rest {
   margin: 25px;
+}
+
+.mensaje {
+  background-color: green;
 }
