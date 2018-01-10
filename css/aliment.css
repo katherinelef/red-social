@@ -70,3 +70,10 @@ p {
   }
   
 }
+/* estilos de eventos.html */
+img {
+  height: 40vh;
+  width: 90%;
+  margin-top:12px;
+  opacity: 0;
+}

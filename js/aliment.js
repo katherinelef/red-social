@@ -7,4 +7,9 @@ $(document).ready(function() {
   }
   show();
   $('.card-grid').flip({trigger:'hover'});
+
+  // evento para eventos.html
+  $('.container-fluid img').each(function(contador) {
+    $(this).delay((contador)*500).fadeTo(1000,1);
+  })
 });
