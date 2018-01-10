@@ -1,56 +1,47 @@
-window.onload = function () {
-//evento para agregar el mensaje escrito//
-var button = document.getElementById("button");
-  button.addEventListener("click", addText);
-//evento para agregar contador de letras//
-var textArea = document.getElementById("text");
-  textArea.addEventListener("keyup", addAccount);
-};
+$(document).ready(function() {
+  var button = $('#button');
+  button.click(function addText() {
+    var textArea = document.getElementById('text').value;
+    var container = document.createElement('div');
+    var message = document.createElement('p');
+    var date = new Date();
+    var content = document.createTextNode(textArea + ' ' + date.getHours() + ':' + date.getMinutes());
+    var main = document.getElementById('box-image');
+    container.appendChild(message);
+    message.appendChild(content);
+    message.classList.add('message');
+    main.appendChild(message);
+    document.getElementById('text').value = '';
+    document.getElementById('text').focus();
+  });
+  var textArea = $('#text');
+  textArea.keyup(function() {
+    var com = $(this).val();
+    localStorage.setItem('nombre', com);
+  });
+});
 
-//creando funcion para addText//
-function addText() {
-  var length = document.getElementById("text").value.length;
-    if (length>"0" & length<="140"){
-      var textArea = document.getElementById("text").value;
-      var container = document.createElement("div");
-      var message= document.createElement("p");
-      var date = new Date();
-      var content = document.createTextNode(textArea +" "+ date.getHours()+":"+date.getMinutes());//añadir hora//
-      var main = document.getElementById("box-image")
-        container.appendChild(message);
-        message.appendChild(content);
-        message.classList.add ("message");
-        main.appendChild(message);
-        document.getElementById("text").value="";//borrar mensaje escrito en el input //
-        document.getElementById("contador").value="140";
-        document.getElementById("contador").style.color="black";
-        document.getElementById('text').focus();
-      }
-  };
+function archivo(evt) {
+      var files = evt.target.files; // FileList object
 
-//creando funcion para addAccount//
-function addAccount (){
-  var max = "140";
-  var message = document.getElementById("text").value;
-  var longitud = message.length;
-  var contador=document.getElementById("contador");
-    //cambiar el color del contador si cambia la longitud del texto//
-    if(longitud>="0" & longitud<"120"){
-      contador.style.color="black";
-      contador.value = max-longitud;
-    }
-    else if(longitud>="120" & longitud<"130"){
-      contador.style.color="red";
-      contador.value = max-longitud;
-    }
-    else if(longitud>="130" & longitud<="140"){
-      contador.style.color="green";
-      contador.value = max-longitud;
-    }
-    else if(longitud>"140"){
-      contador.value =("-"+(longitud-max));
-    }
-};
+        //Obtenemos la imagen del campo "file".
+      for (var i = 0, f; f = files[i]; i++) {
+           //Solo admitimos imágenes.
+           if (!f.type.match('image.*')) {
+                continue;
+           }
 
-//ubicando el focus en el  textArea//
-document.getElementById('text').focus();
+           var reader = new FileReader();
+
+           reader.onload = (function(theFile) {
+               return function(e) {
+               // Creamos la imagen.
+                      document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+               };
+           })(f);
+
+           reader.readAsDataURL(f);
+       }
+}
+
+      document.getElementById('files').addEventListener('change', archivo, false);
