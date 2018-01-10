@@ -62,6 +62,13 @@
   margin-top: 15px;
 }
 
+.button {
+  background-color: rgb(12, 131, 67);
+  color: white;
+  margin-left:15px;
+  margin-top: 15px;
+}
+
 .foto1 {
   border: 1px solid rgb(12, 131, 67);
 
@@ -95,7 +102,7 @@
 .message {
   border: 1px solid rgb(12, 131, 67);
   border-radius: 5px;
-  width: 42%;
+  width: 40%;
   position: relative;
   left: 50%;
   text-align: right;
@@ -109,8 +116,14 @@
   font-size: 20px;
 }
 
-.thumb{
-     height: 300px;
-     border: 1px solid #000;
-     margin: 10px 5px 0 0;
+#files {
+  width: 140px;
 }
+
+.subir-fotos {
+  border: 1px solid rgb(12, 131, 67);
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  left: 40%;
+  }

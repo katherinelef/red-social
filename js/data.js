@@ -35,7 +35,7 @@ var data = [
     'description': 'Sirven tanto para rebozar, como para aglutinar, hacer pasta y noodles, bollería y repostería, etc.',
   },
   {
-    
+
     'name':'Frutos secos',
     'img':'../assets/images/frutos_secos.jpg',
     'description': 'Aportan vitaminas, minerales y ácidos grasos omega-3, entre otros nutrientes.',
@@ -49,5 +49,14 @@ var data = [
     'name':'Salsas',
     'img':'../assets/images/salsas.jpg',
     'description':'Tener vinagres y salsas en la cocina siempre nos viene bien para conseguir interesante sabores en nuestros platos.',
+  },
+]
+
+
+var user = [
+  {
+    'name':'katherine Levano Figueroa',
+    'correo':'kathy@hotmail.com',
+    'description': 'Las semillas aportan deliciosos toques de sabor a nuestras recetas.',
   },
 ]
