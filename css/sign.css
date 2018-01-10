@@ -20,6 +20,9 @@ span {
 .sign {
   margin-top: -1rem;
 }
+#signup {
+  margin: auto;
+}
 h3 {
   color: rgb(12, 131, 67); 
 }

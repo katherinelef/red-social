@@ -9,7 +9,7 @@ $(document).ready(function() {
   $('.card-grid').flip({trigger:'hover'});
 
   // // evento para eventos.html
-  $('.container-fluid .flip-text ').each(function(contador) {
-    $(this).delay((contador)*500).fadeTo(1000,1);
-  })
+  // $('.container-fluid .flip-text ').each(function(contador) {
+  //   $(this).delay((contador)*500).fadeTo(1000,1);
+  // })
 });
