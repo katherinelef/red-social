@@ -14,7 +14,7 @@ $(document).ready(function () {
 
   $submit.on('click', function(){
     if($validEmail.val() === localStorage.email && $validPassword.val() === localStorage.password) {
-      window.location.href = '../views/perfil.html';
+      window.location.href = '../views/comunidad.html';
     } else {
       window.location.href = '../views/sign-up.html';
     }
