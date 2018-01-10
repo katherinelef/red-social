@@ -39,4 +39,34 @@
   font-size: 15px;
   padding: 20px;
 }
-
+/*aplicando flip */
+.card-grid {
+  height: 70vh;
+  width: 80%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+#aliment {
+  margin: 17px 8px;
+}
+p {
+  font-size: 24px;
+  color: rgb(12, 131, 67);
+  margin-top: 4rem;
+}
+/* desktop */
+@media (min-width:920px) {
+  .view-mobile {
+    display: none;
+  }
+  .view-desktop {
+    display: block;
+  }
+  .card-grid {
+    height: 90vh;
+    width: 80%;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+  
+}
