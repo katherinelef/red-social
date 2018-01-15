@@ -41,6 +41,7 @@ $(document).ready(function () {
         $verifyName = false;
         buttondesacti();
       }
+    
     });
 
     $validLastName.on('input', function(event){
@@ -64,6 +65,12 @@ $(document).ready(function () {
       } else {
         $verifyEmail = false;
         buttondesacti();
+      }
+      if($validEmail == '') {
+        $('#mensaje3').fateIn();
+        return false;
+      }else{
+        $('#mensaje3').fateOut();
       }
     });
     // validando password
